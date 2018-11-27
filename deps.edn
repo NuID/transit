@@ -1,0 +1,11 @@
+{:deps
+ {nuid/utils {:sha "6f4f7c9118b5174f7d7281eadd4d58691e343677"
+              :git/url "git@github.com:NuID/utils.git"}
+  org.clojure/clojurescript {:mvn/version "1.10.439"}
+  com.cognitect/transit-cljs {:mvn/version "0.8.256"}
+  com.cognitect/transit-clj {:mvn/version "0.8.309"}
+  org.clojure/clojure {:mvn/version "1.10.0-RC2"}}
+ :aliases
+ {:cambada
+  {:extra-deps {luchiniatwork/cambada {:mvn/version "1.0.0"}}}}
+ :paths ["src"]}
