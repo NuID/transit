@@ -1,12 +1,15 @@
 {:deps
  {nuid/utils
   {:git/url "git@github.com:nuid/utils",
-   :sha "3f62ca0293543f09227ac1f05a2aa8d64488fcd4"},
+   :sha "678977f63fc52a76a768b3db671e41c1a41efcc4"},
   org.clojure/clojurescript {:mvn/version "1.10.520"},
   com.cognitect/transit-cljs {:mvn/version "0.8.256"},
   com.cognitect/transit-clj {:mvn/version "0.8.313"},
   org.clojure/clojure {:mvn/version "1.10.0"}},
  :aliases
- {:cambada
-  {:extra-deps {luchiniatwork/cambada {:mvn/version "1.0.0"}}}},
+ {:repl
+  {:extra-deps
+   {nuid/repl
+    {:git/url "git@github.com:nuid/repl",
+     :sha "4e6d77e2419b38b1e913b1cba65b23fe3c123b52"}}}},
  :paths ["src"]}
