@@ -1,7 +1,7 @@
 {:deps
  {nuid/utils
   {:git/url "git@github.com:nuid/utils.git",
-   :sha "30a97b4ea7477b5bb70485acc7664fe91b9c4dfd"},
+   :sha "9b5a2e36fed7f3fe614446961da086ba5688efda"},
   org.clojure/clojurescript {:mvn/version "1.10.520"},
   com.cognitect/transit-cljs {:mvn/version "0.8.256"},
   com.cognitect/transit-clj {:mvn/version "0.8.313"},
@@ -9,5 +9,7 @@
  :aliases
  {:repl
   {:extra-deps
-   {nuid/deps {:local/root "/Users/nolan/dev/nuid/deps"}}}},
+   {nuid/deps
+    {:git/url "git@github.com:nuid/deps.git",
+     :sha "8a32571147caf3c58d89293848d244cc6733d1f7"}}}},
  :paths ["src"]}
