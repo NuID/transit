@@ -8,7 +8,7 @@ Cross-platform [transit](https://github.com/cognitect/transit-clj) (de)serializa
 
 ## From Clojure and ClojureScript
 
-This library smooths over the interface differences between `transit-clj` and `transit-cljs`, which are likely temporary ideosyncrasies. This library will be phased out if the `transit` implementations converge on a common API.
+This library smooths over the interface differences between `transit-clj` and `transit-cljs`, which are likely temporary idiosyncrasies. This library will be phased out if the `transit` implementations converge on a common API.
 
 ### tools.deps:
 
