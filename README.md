@@ -27,7 +27,7 @@ $ clj # or shadow-cljs node-repl
 
 ## From Others
 
-This library is meant to synergize with `transit` libraries in other languages ([`java`](https://github.com/cognitect/transit-java), [`javascript`](https://github.com/cognitect/transit-js), and [others](https://github.com/cognitect/transit-js)). This is primarly useful for (de)serialization of language-specific implementations of custom classes or types, such as elliptic curve points and big numbers.
+This library is meant to synergize with `transit` libraries in other languages ([`java`](https://github.com/cognitect/transit-java), [`javascript`](https://github.com/cognitect/transit-js), and [others](https://github.com/cognitect/transit-format#implementations)). This is primarly useful for (de)serialization of language-specific implementations of custom classes or types, such as elliptic curve points and big numbers.
 
 ## Contributing
 
