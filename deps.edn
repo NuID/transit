@@ -1,5 +1,7 @@
 {:deps
- {nuid/bytes {:local/root "/Users/nolan/dev/nuid/bytes"},
+ {nuid/bytes
+  {:git/url "https://github.com/nuid/bytes.git",
+   :sha "f1afc86c6cbeab3dabce6f810bc34af501ffd28c"},
   org.clojure/clojurescript {:mvn/version "1.10.520"},
   com.cognitect/transit-cljs {:mvn/version "0.8.256"},
   com.cognitect/transit-clj {:mvn/version "0.8.313"},
@@ -18,5 +20,7 @@
   :depot/update {:main-opts ["-m" "depot.outdated.main --update"]},
   :repl
   {:extra-deps
-   {nuid/deps {:local/root "/Users/nolan/dev/nuid/deps"}}}},
+   {nuid/deps
+    {:git/url "https://github.com/nuid/deps.git",
+     :sha "735373d03749d29aefc8207aaa15030fd781e91b"}}}},
  :paths ["src"]}
