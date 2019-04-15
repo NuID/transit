@@ -15,12 +15,6 @@
              (t/read reader))
       :cljs (t/read (t/reader type opts) t))))
 
-(defprotocol Wrappable
-  "Wraps a value immediately prior to writing.
-  This is useful in typing JS values to indicate
-  how they should be written."
-  (wrap [x]))
-
 (defprotocol TransitWritable
   (rep [x]))
 
@@ -29,11 +23,10 @@
   ([opts x] (write :utf8 :json opts x))
   ([type opts x] (write :utf8 type opts x))
   ([charset type opts x]
-   (let [x (if (satisfies? Wrappable x) (wrap x) x)]
-     #?(:clj (let [out (java.io.ByteArrayOutputStream.)
-                   writer (t/writer out type opts)]
-               (t/write writer x)
-               (bytes/str (.toByteArray out) charset))
-        :cljs (t/write (t/writer type opts) x)))))
+   #?(:clj (let [out (java.io.ByteArrayOutputStream.)
+                 writer (t/writer out type opts)]
+             (t/write writer x)
+             (bytes/str (.toByteArray out) charset))
+      :cljs (t/write (t/writer type opts) x))))
 
 #?(:cljs (def exports #js {:write write :read read}))
