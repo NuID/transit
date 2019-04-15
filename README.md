@@ -12,7 +12,7 @@ This library smooths over the interface differences between `transit-clj` and `t
 
 ### tools.deps:
 
-`{nuid/transit {:git/url "https://github.com/nuid/transit" :sha "..."}`
+`{nuid/transit {:git/url "https://github.com/nuid/transit" :sha "..."}}`
 
 ### usage:
 
