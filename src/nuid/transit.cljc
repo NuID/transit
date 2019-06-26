@@ -15,9 +15,6 @@
              (t/read reader))
       :cljs (t/read (t/reader type opts) t))))
 
-(defprotocol TransitWritable
-  (rep [x]))
-
 (defn write
   ([x] (write :utf8 :json nil x))
   ([opts x] (write :utf8 :json opts x))
