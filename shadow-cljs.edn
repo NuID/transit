@@ -1,12 +1,1 @@
-{:deps {:aliases [:cljs]}
- :builds
- {:browser
-  {:modules    {:nuid_transit {:entries [nuid.transit]}},
-   :output-dir "target/browser",
-   :asset-path "target/browser",
-   :target     :browser},
-
-  :node
-  {:output-to   "target/node/nuid_transit.js",
-   :exports-var nuid.transit/exports,
-   :target      :node-library}}}
+{:deps {:aliases [:cljs]}}
