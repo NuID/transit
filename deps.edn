@@ -1,7 +1,7 @@
 {:deps
  {nuid/bytes
   {:git/url "https://github.com/nuid/bytes.git",
-   :sha "e4fec647ee25931866e7557a1a1cf564b0f5fe71"},
+   :sha "a13c0b280ae0c89f0e774aa8bf59198a1ca624dd"},
   com.cognitect/transit-clj {:mvn/version "1.0.324"},
   org.clojure/clojure {:mvn/version "1.10.1"}},
  :aliases
